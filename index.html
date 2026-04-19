@@ -2,73 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>KairoJS</title>
+  <title>KairoLibs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- HERO -->
 <header class="hero">
-  <h1>KairoJS</h1>
-  <p>A lightweight JavaScript library for DOM, events, and UI creation.</p>
+  <h1>KairoLibs</h1>
+  <p>A lightweight JavaScript + CSS ecosystem for modern web building.</p>
 
-  <div class="buttons">
+  <div class="cta">
     <a href="https://github.com/KairoDev/KairoJS" target="_blank">GitHub</a>
-    <a href="#cdn">CDN</a>
-    <a href="#docs">Tutorials</a>
+    <a href="#install">Get Started</a>
   </div>
 </header>
 
-<!-- CDN -->
-<section id="cdn" class="card">
-  <h2>CDN Usage</h2>
-  <p>Use this script tag to include KairoJS:</p>
+<!-- INSTALL -->
+<section id="install" class="card">
+  <h2>Quick Install</h2>
 
+  <h3>KairoJS CDN</h3>
   <code>
 &lt;script src="https://cdn.jsdelivr.net/gh/KairoDev/KairoJS/JS/kairo.min.js"&gt;&lt;/script&gt;
   </code>
+
+  <h3>KairoCSS (coming soon)</h3>
+  <code>
+&lt;link rel="stylesheet" href="kairo.css"&gt;
+  </code>
 </section>
 
-<!-- DOWNLOAD -->
+<!-- FEATURES -->
+<section class="grid">
+
+  <div class="box">
+    <h3>⚡ KairoJS</h3>
+    <p>DOM manipulation, events, and chaining API.</p>
+  </div>
+
+  <div class="box">
+    <h3>🎨 KairoCSS</h3>
+    <p>Utility-first styling system for fast UI building.</p>
+  </div>
+
+  <div class="box">
+    <h3>🧠 Simple API</h3>
+    <p>jQuery-like syntax, modern behavior.</p>
+  </div>
+
+</section>
+
+<!-- QUICK DEMO (STATIC, NO JS EXECUTION) -->
 <section class="card">
-  <h2>Download</h2>
-  <p>Get the latest version from GitHub:</p>
+  <h2>Examples</h2>
 
-  <a class="btn" href="https://github.com/KairoDev/KairoJS" target="_blank">
-    Download / Repo
-  </a>
-</section>
-
-<!-- TUTORIALS -->
-<section id="docs" class="card">
-  <h2>Tutorials</h2>
-
-  <h3>1. Select Elements</h3>
-  <pre>$("#btn")</pre>
-
-  <h3>2. Change Style</h3>
   <pre>
 $("#btn").css({
   backgroundColor: "red"
 });
   </pre>
 
-  <h3>3. Events</h3>
   <pre>
 Kairo.keyboard.keydown(e => {
   console.log(e.key);
 });
   </pre>
 
-  <h3>4. Mouse</h3>
   <pre>
 mouse.rmb(() => console.log("Right click"));
   </pre>
 </section>
 
+<!-- CTA -->
+<section class="card center">
+  <h2>Start building with KairoLibs</h2>
+
+  <a class="btn" href="https://github.com/KairoDev/KairoJS" target="_blank">
+    View GitHub
+  </a>
+</section>
+
 <footer>
-  <p>Made by KairoDev • v0.0.x</p>
+  <p>KairoLibs • Built for modern web simplicity</p>
 </footer>
 
 </body>
