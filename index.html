@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KairoJS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="hero">
+  <h1>KairoJS</h1>
+  <p>A lightweight JavaScript library for DOM, events, and UI creation.</p>
+
+  <div class="buttons">
+    <a href="https://github.com/KairoDev/KairoJS" target="_blank">GitHub</a>
+    <a href="#cdn">CDN</a>
+    <a href="#docs">Tutorials</a>
+  </div>
+</header>
+
+<!-- CDN -->
+<section id="cdn" class="card">
+  <h2>CDN Usage</h2>
+  <p>Use this script tag to include KairoJS:</p>
+
+  <code>
+&lt;script src="https://cdn.jsdelivr.net/gh/KairoDev/KairoJS/JS/kairo.min.js"&gt;&lt;/script&gt;
+  </code>
+</section>
+
+<!-- DOWNLOAD -->
+<section class="card">
+  <h2>Download</h2>
+  <p>Get the latest version from GitHub:</p>
+
+  <a class="btn" href="https://github.com/KairoDev/KairoJS" target="_blank">
+    Download / Repo
+  </a>
+</section>
+
+<!-- TUTORIALS -->
+<section id="docs" class="card">
+  <h2>Tutorials</h2>
+
+  <h3>1. Select Elements</h3>
+  <pre>$("#btn")</pre>
+
+  <h3>2. Change Style</h3>
+  <pre>
+$("#btn").css({
+  backgroundColor: "red"
+});
+  </pre>
+
+  <h3>3. Events</h3>
+  <pre>
+Kairo.keyboard.keydown(e => {
+  console.log(e.key);
+});
+  </pre>
+
+  <h3>4. Mouse</h3>
+  <pre>
+mouse.rmb(() => console.log("Right click"));
+  </pre>
+</section>
+
+<footer>
+  <p>Made by KairoDev • v0.0.x</p>
+</footer>
+
+</body>
+</html>
